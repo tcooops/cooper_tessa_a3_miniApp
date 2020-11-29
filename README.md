@@ -1,28 +1,24 @@
-# Read Me Template!
+# Which Mini Cooper model would YOU choose?
 
 ## Descrption
-* Give purpose and reason for why the project exists and give a nice description about the project.
+The purpose of this project is to demonstrate using the fetch functionality to retrieve information from a database and populate our web page with the respective information.
 
 ## Requirements
 * Use a modern browser such as Google Chrome.
-* Whatever other requirements someone's system may need to view this project
 
 ## Installation
 * `CD` to the location of your choice, then `git clone` the project and browse away!
-* Any thing else they need to do to install your proj?
 
 ## Built With
 * HTML
 * CSS
 * SASS
 * JavaScript
-* AJAX
 * PHP
 * Vue
-* etc...
+* AJAX
 
 ## Authors
-* Tessa Benton-Cooper - Developer
-* Jordan Andrigo - Designer
+* Tessa Benton-Cooper - Developer & designer
 
 
