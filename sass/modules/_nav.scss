@@ -1,0 +1,15 @@
+#main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    li {
+        list-style-type: none;
+    }
+    a { 
+        color: white;
+        text-decoration: none;
+    }
+    a:visited {color: white;}
+    a:hover {color: #999;}
+}

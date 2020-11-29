@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with SASS and Modules</title>
+
+    <!-- this has to be a css file -->
+    <link rel="stylesheet" href="https://use.typekit.net/jnf5aqk.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<div class="main-container">
+    <main id="app">
+        <h1 class="hidden">Welcome to my awesome app</h1>
+
+        <!-- this is an HTML component -->
+        <nav>
+            <div>
+                <img src="images/logo.jpg" alt="logo" id="main-logo">
+            </div>
+            <div>
+                <ul id="main-nav">
+                    <li><a href="#">link 1</a></li>
+                    <li><a href="#">link 2</a></li>
+                    <li><a href="#">link 3</a></li>
+                    <li><a href="#">link 4</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end component -->
+
+        <!-- add a users section here -->
+        <section class="user-section">
+                <!-- user-template copies get rendered here -->
+        </section>
+        <!-- end users section -->
+    </main>
+</div>
+    <footer>by tessa benton-cooper</footer>
+
+    <!-- template files here (these don't render - the contents are reusable and get cloned at runtime) -->
+    <template id="user-template">
+        <div class="user">
+            <h2 class="hidden"></h2>
+            <img src="" alt="car model img">
+        </div>
+    </template>
+    <!-- end templates -->
+
+    <!-- Lightbox - hidden by default, dynamic content -->
+    <section class="light-box">
+        <span class="close-button">x</span>
+
+        <div>
+            <img src="" alt="car model image" class="lightbox-image">
+            <h3 class="lightbox-title"></h3>
+            <p class="lightbox-description"></p>
+        </div>
+
+    </section>
+
+    <!-- script files always go here -->
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

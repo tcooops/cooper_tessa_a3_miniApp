@@ -1,0 +1,26 @@
+.light-box {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh; // may be 100%
+    color: white;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+    .close-button {
+/*      height: 10px;
+        width: 10px;
+        border-radius: 100%;
+        background-color: #fff; */
+        float: right;
+        font-size: 2em;
+        cursor: pointer;
+        padding: 20px;
+        margin-right: 30px;
+        color: hotpink;
+    }
+}
+
+// turn the lightbox on when we have some content to show
+.show-lightbox {
+    display: block;
+}
