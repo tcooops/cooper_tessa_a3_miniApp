@@ -17,22 +17,36 @@
         <h1 class="hidden">Welcome to my Mini Cooper App!</h1>
 
         <!-- this is an HTML component -->
-        <nav id="main-nav">
-            <ul>
+        <nav>
+            <h2 class="hidden">main nav</h2>
+            <ul id="main-nav">
                 <li><a href="#">discover</a></li>
-                <li><a href="#"></a>models</li>
-                <li><a href="#"></a>highlights & features</li>
+                <li><a href="#">models</a></li>
+                <li><img src="images/logo.jpg" alt="mini logo"></li>
+                <li><a href="#">highlights & features</a></li>
+                <li><a href="#">owners</a></li>
             </ul>
         </nav>
         <!-- end component -->
-
+        <section>
+            <div class="hero">
+                <img src="images/hero.jpg" alt="hero">
+            </div>
+        </section>
         <!-- add a users section here -->
-        <section class="user-section">
+
+            <section class="user-section">
+                <div> 
+                    <h2>Explore our models!</h2>
+                </div>
+                <h2 class="hidden">models</h2>
+           
                 <!-- user-template copies get rendered here -->
         </section>
         <!-- end users section -->
         <footer>
-            <p>Mini Cooper</p>
+            <h3>By Tessa Benton-Cooper</h3>
+            <p>for MMED3039</p>
         </footer>
     </main>
 </div>
@@ -42,7 +56,7 @@
     <template id="user-template">
         <div class="user">
             <h2 class="hidden"></h2>
-            <img src="" alt="vehicle model img">
+            <img src="" alt="vehicle model img" class="main-photo">
 <!--            <h2 class="user-name"></h2>
             <p class="user-nickname"></p>
             <p class="user-role"></p> -->
@@ -54,10 +68,16 @@
     <section class="lightbox">
         <span class="close-button">x</span>
 
-        <div>
-            <img src="" alt="mini cooper model" class="lightbox-image">
+        <div class="lightbox-div">
+
+            <video src="" width="640" height="360" controls class="lightbox-video"></video>
+            
+<!--            <img src="" alt="mini cooper model" class="lightbox-image">-->
+
             <h3 class="lightbox-title"></h3>
+            <h4 class="lightbox-price"></h4>
             <p class="lightbox-description"></p>
+
         </div>
 
     </section>

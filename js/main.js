@@ -16,10 +16,12 @@ import { fetchData } from "./modules/TheDataMiner.js";
         closeButton.addEventListener("click", ()=> { lightbox.classList.remove('show-lightbox')})
 
         //lightbox should open but nothing inside
-        lightbox.querySelector('img').src = `images/${data[0].img}`;
+        lightbox.querySelector('video').src = `images/${data[0].video}`;
+//        lightbox.querySelector('img').src = `images/${data[0].img2}`;
         lightbox.querySelector('h3').textContent = data[0].title;
-        lightbox.querySelector('p').textContent = data[0].price;
+        lightbox.querySelector('h4').textContent = data[0].price;
         lightbox.querySelector('p').textContent = data[0].description;
+
 
         lightbox.classList.add('show-lightbox')
     }
