@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Working with SASS and Modules</title>
+    <title>Mini Cooper App</title>
 
     <!-- this has to be a css file -->
     <link rel="stylesheet" href="https://use.typekit.net/jnf5aqk.css">
@@ -14,21 +14,15 @@
 <body>
 <div class="main-container">
     <main id="app">
-        <h1 class="hidden">Welcome to my awesome app</h1>
+        <h1 class="hidden">Welcome to my Mini Cooper App!</h1>
 
         <!-- this is an HTML component -->
-        <nav>
-            <div>
-                <img src="images/logo.jpg" alt="logo" id="main-logo">
-            </div>
-            <div>
-                <ul id="main-nav">
-                    <li><a href="#">link 1</a></li>
-                    <li><a href="#">link 2</a></li>
-                    <li><a href="#">link 3</a></li>
-                    <li><a href="#">link 4</a></li>
-                </ul>
-            </div>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#">discover</a></li>
+                <li><a href="#"></a>models</li>
+                <li><a href="#"></a>highlights & features</li>
+            </ul>
         </nav>
         <!-- end component -->
 
@@ -37,25 +31,31 @@
                 <!-- user-template copies get rendered here -->
         </section>
         <!-- end users section -->
+        <footer>
+            <p>Mini Cooper</p>
+        </footer>
     </main>
 </div>
-    <footer>by tessa benton-cooper</footer>
+
 
     <!-- template files here (these don't render - the contents are reusable and get cloned at runtime) -->
     <template id="user-template">
         <div class="user">
             <h2 class="hidden"></h2>
-            <img src="" alt="car model img">
+            <img src="" alt="vehicle model img">
+<!--            <h2 class="user-name"></h2>
+            <p class="user-nickname"></p>
+            <p class="user-role"></p> -->
         </div>
     </template>
     <!-- end templates -->
 
     <!-- Lightbox - hidden by default, dynamic content -->
-    <section class="light-box">
+    <section class="lightbox">
         <span class="close-button">x</span>
 
         <div>
-            <img src="" alt="car model image" class="lightbox-image">
+            <img src="" alt="mini cooper model" class="lightbox-image">
             <h3 class="lightbox-title"></h3>
             <p class="lightbox-description"></p>
         </div>

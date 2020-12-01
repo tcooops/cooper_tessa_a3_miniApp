@@ -10,17 +10,18 @@ import { fetchData } from "./modules/TheDataMiner.js";
     }
 
     function openLightbox(data) {
-        let lightbox = document.querySelector('.light-box'), 
+        let lightbox = document.querySelector('.lightbox'), 
             closeButton = lightbox.querySelector('span');
 
-        closeButton.addEventListener("click", ()=> { lightbox.classList.remove('.show-lightbox')})
+        closeButton.addEventListener("click", ()=> { lightbox.classList.remove('show-lightbox')})
 
-        //lightbox.addEventListener("click", ()=> { lightbox.classList.add('show-lightbox')});
-        lightbox.classList.add('show-lightbox')
         //lightbox should open but nothing inside
         lightbox.querySelector('img').src = `images/${data[0].img}`;
-        lightbox.querySelector('h3').textContent = data[0].name;
+        lightbox.querySelector('h3').textContent = data[0].title;
+        lightbox.querySelector('p').textContent = data[0].price;
         lightbox.querySelector('p').textContent = data[0].description;
+
+        lightbox.classList.add('show-lightbox')
     }
 
     function retrieveProjectInfo(event) {
@@ -43,9 +44,12 @@ import { fetchData } from "./modules/TheDataMiner.js";
             currentUserText[1].src = `images/${thumbs[user].img}`;
             currentUserText[1].id = thumbs[user].id;
             // add this new user to the view
+            
             currentUser.addEventListener("click", retrieveProjectInfo);
             userSection.appendChild(currentUser);
         }
+
+        userSection.addEventListener("click", retrieveProjectInfo)
     }
         
     fetchData("./includes/index.php").then(data => renderPortfolioThumbnails(data)).catch(err => console.log(err));

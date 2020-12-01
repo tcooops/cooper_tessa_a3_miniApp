@@ -1,5 +1,7 @@
 # Which Mini Cooper model would YOU choose?
-![mini cooper](./images/readme.jpg)
+
+![alt](./images/readme.jpg)
+
 ## Descrption
 The purpose of this project is to demonstrate using the fetch functionality to retrieve information from a database and populate our web page with the respective information.
 
