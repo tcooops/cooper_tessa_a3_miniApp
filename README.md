@@ -17,10 +17,8 @@ The purpose of this project is to demonstrate using the fetch functionality to r
 * SASS
 * JavaScript
 * PHP
-* Vue
-* AJAX
 
 ## Authors
-* Tessa Benton-Cooper - Developer & designer
+* Tessa Benton-Cooper - Developer & Designer
 
 
