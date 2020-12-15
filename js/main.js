@@ -26,6 +26,8 @@ import { fetchData } from "./modules/TheDataMiner.js";
         lightbox.classList.add('show-lightbox')
     }
 
+
+
     function retrieveProjectInfo(event) {
         // test for an ID
        if (!event.target.id)  { return }
